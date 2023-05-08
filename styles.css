@@ -42,6 +42,7 @@ img {
     font-size: small;
     font-weight: normal;
     letter-spacing: .3rem;
+    margin-block-start: 0;
 }
 
 h1 {
