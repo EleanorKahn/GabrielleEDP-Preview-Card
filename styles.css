@@ -2,12 +2,33 @@
     color: hsl(228, 45%, 44%); 
 }
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+    }
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+main {
+    display: grid;
+    place-items: center;
 }
 
 section {
     display: flex;
     flex-flow: col wrap;
+    border: 1px solid black;
+    border-radius: 0.5rem;
 }
 
 section > * {
@@ -16,13 +37,13 @@ section > * {
 
 section > article {
     padding: 1rem;
+    flex: 1;
+    background-color: white;
 }
 
-main {
-    display: grid;
-    place-items: center;
-    border: 1px solid black;
-    font-weight: 500;
+img {
+    flex: 1;
+    max-width: 100%;
 }
 
 h2 {
@@ -31,6 +52,7 @@ h2 {
 
 h1 {
     font-weight: 700;
+    color: hsl(212, 21%, 14%);
 }
 
 span {
@@ -41,4 +63,14 @@ span {
     color: hsl(158, 36%, 37%);
     font-weight: 700;
 }
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 2.5rem;
+}
+
+
 
