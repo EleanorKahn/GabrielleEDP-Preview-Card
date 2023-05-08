@@ -6,17 +6,12 @@
     text-align: center; 
 }
 
-@media screen and (max-width: 375px) {
-    body {
-        display: flex;
-    }
-}
-
 body {
     background-color: hsl(30, 38%, 92%);
     color: hsl(228, 12%, 48%);
     font-weight: 500;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -26,9 +21,8 @@ main {
 
 section {
     display: flex;
-    flex-flow: col wrap;
-    border: 1px solid black;
-    border-radius: 0.5rem;
+    flex-flow: row wrap;
+    border-radius: .5rem;
 }
 
 section > * {
@@ -36,32 +30,43 @@ section > * {
 }
 
 section > article {
-    padding: 1rem;
-    flex: 1;
+    padding: 1.75rem;
     background-color: white;
 }
 
 img {
-    flex: 1;
     max-width: 100%;
 }
 
-h2 {
+.category {
+    font-size: small;
     font-weight: normal;
+    letter-spacing: .3rem;
 }
 
 h1 {
-    font-weight: 700;
     color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", "serif";
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 1;
+    margin-block: 1.3rem;
+    padding-inline: .25rem;
 }
 
-span {
+.original {
+    margin-inline-end: .5rem;
     text-decoration: line-through;
 }
+
 
 .markDown {
     color: hsl(158, 36%, 37%);
     font-weight: 700;
+    font-family: "Fraunces", "serif";
+    font-size: xx-large;
+    margin-inline-end: .85rem;
+    vertical-align: middle;
 }
 
 button {
@@ -69,7 +74,26 @@ button {
     color: white;
     width: 100%;
     text-align: center;
-    height: 2.5rem;
+    height: 3rem;
+    border-radius: .5rem;
+    border-color: none;
+    font-family: "Montserrat", "sans-serif";
+}
+
+.cart {
+    margin-inline-end: .5rem;
+    vertical-align: middle;
+}
+
+p {
+    line-height: 1.65;
+}
+
+@media screen and (max-width: 375px) {
+    section {
+        display: flex;
+        flex-wrap: row wrap;
+    }
 }
 
 
