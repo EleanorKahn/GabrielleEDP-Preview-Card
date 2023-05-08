@@ -1,0 +1,44 @@
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+section {
+    display: flex;
+    flex-flow: col wrap;
+}
+
+section > * {
+    flex: 1;
+}
+
+section > article {
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+span {
+    text-decoration: line-through;
+}
+
+.markDown {
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+}
+
