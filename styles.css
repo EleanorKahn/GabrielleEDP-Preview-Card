@@ -6,7 +6,7 @@
     text-align: center; 
     position: fixed;
     bottom: 0;
-    right: 50%;
+    width: 100%;
 }
 
 body {
@@ -84,13 +84,13 @@ button {
     text-align: center;
     height: 3rem;
     border-radius: .5rem;
-    border-color: none;
+    border: none;
     font-family: "Montserrat", "sans-serif";
     margin-block-start: .5rem;
 }
 
 button:active {
-    background-color: hsl(158, 38%, 22%);
+    background-color: hsl(159, 35%, 24%);
 }
 
 .cart {
@@ -108,6 +108,7 @@ p {
         flex-wrap: column wrap;
     }
     .product {
+        content: url(images/image-product-mobile.jpg);
         object-fit: cover;
         max-width: 100%;
     }
